@@ -1,12 +1,12 @@
 #!/bin/bash
 
-echo"Ejercicos de bucles"
+echo "Ejercicos de bucles"
 
 for VARIABLE in `ls`; do
 	if [ -e $VARIABLE ]; then
-	echo "ola k ase $VARIABLE"
+	echo -e "ola k ase \e[0;32m $VARIABLE\e[0m"
 else
-	echo "no ola k ase $VARIABLE"
+	echo -e "no ola k ase \e[0;31m $VARIABLE\e[0m"
 fi
 
 done
